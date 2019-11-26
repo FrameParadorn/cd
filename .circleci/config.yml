@@ -11,7 +11,13 @@ jobs:
       - checkout
 
       # Download and cache dependencies
-      - run: yarn install
+      - run: 
+            name: Deploy on premise ssh 
+            command: |
+                ssh root@45.77.243.53
+
+
+
 
 workflows:
   version: 2
