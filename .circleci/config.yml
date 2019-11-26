@@ -14,8 +14,7 @@ jobs:
       - run: 
             name: Deploy on premise ssh 
             command: |
-                ssh root@45.77.243.53
-                cd jocop
+                ssh root@45.77.243.53 "git -C /root/jocop/ pull origin master"
 
 
 
